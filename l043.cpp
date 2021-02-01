@@ -113,10 +113,32 @@ int main()
 }
 
 void part3() {
+    string option;
+    int gen;
+
+    cout << "Would you like points to be generated(type yes or no): ";
+    cin >> option;
+//    cout << "Type another number: ";
+//    cin >> y;
+//    sum = x + y;
+//    cout << "Sum is: " << sum;
+
+    if((option == "Yes") || (option == "yes") )
+    {
+        gen = 1;
+        cout << "Generating Points." << endl;
+    }
+
+    if((option == "No") || (option == "no") )
+    {
+        gen = 0;
+    }
+
+
     struct Node *root = nullptr;
     int points[][k] = {{3, 6}, {17, 15}, {13, 15}, {6, 12},
                        {9, 1}, {2, 7}, {10, 19}};
-    
+
 
     int n = sizeof(points)/sizeof(points[0]);
 
